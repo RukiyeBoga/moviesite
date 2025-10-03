@@ -1,0 +1,350 @@
+<header class="bg-black py-6  lg:py-12 text-gega-grey font-gemunu uppercase">
+    <div class="container flex items-center justify-between space-x-8 lg:space-x-16">
+        <a href="#"
+            class="text-4xl lg:text-6xl font-bold text-gega-grey text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-grey ml-5">GEGA</a>
+
+        <!--Mobile Menü -->
+        <div class="block md:hidden">
+            <div class="space-y-1 cursor-pointer">
+                <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+                <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+                <div class="bg-gega-grey w-8 h-1 rounded-full"></div>
+
+            </div>
+
+        </div>
+        <nav class="hidden md:flex justify-between flex-1">
+            <div class="flex items-center text-lg space-x-4 lg:space-x-8">
+                <a href="#" class="hover:text-gega-melon transition duration-500">movies</a>
+                <a href="#" class="hover:text-gega-melon transition duration-500">celebrities</a>
+                <a href="#" class="hover:text-gega-melon transition duration-500">blog</a>
+                <a href="#" class="hover:text-gega-melon transition duration-500">news</a>
+                <a href="#" class="hover:text-gega-melon transition duration-500">about</a>
+            </div>
+            <div class="flex items-center space-x-4 lg:space-x-8">
+                <form>
+                    <div class="group border-r px-4 mx-4 py-1 border-gega-red">
+                        <input type="text"
+                            class="opacity-0 group-hover:opacity-100 bg-transparent border-b border-gega-red focus:outline-none w-24w-44 transition duration-500">
+                        <button class="-ml-4 group-hover:ml-0 transition duration-500 "><i
+                                class="fas fa-search group-hover:text-gega-red transition duration-500"></i></button>
+                    </div>
+                </form>
+                <div class="flex items-center space-x-4 lg:space-x-8 lg:text-lg">
+                    <a href="#">Login</a>
+                    <a href="#"
+                        class="bg-gega-red px-3 py-1 hover:bg-rose-600 hover:text-gega-grey cursor-pointer transition duration-500 whitespace-nowrap">Sign
+                        Up</a>
+
+                </div>
+
+            </div>
+
+        </nav>
+    </div>
+
+</header>
+
+<section class="h-64 md:h-96 lg:h-128 group relative">
+    <img srcset="assets/spiderman.jpg" alt="Main Image" class="h-full w-full object-cover">
+    <div class="absolute bottom-0 w-full bg-gradient-to-b from-transparent to-black">
+        <div class="ml-5 pl-10 lg:pl-0">
+            <h3 class="text-gega-melon tracking-wider group-hover:mb-1 duration-500">Action, Drama, Thriller</h3>
+            <h1 class="text-4xl lg:text-6xl text-gega-grey group-hover:mb-1 duration-500 uppercase">spiderman</h1>
+            <p class="text-gega-grey group-hover:mb-2 duration-500 text-sm lg:text-base w-3/4 lg:w-2/3">Lorem ipsum
+                dolor sit amet
+                consectetur
+                adipisicing
+                elit. Ut, molestias pariatur nam omnis ipsam quam enim incidunt doloribus voluptatibus ipsa repellat
+                quia voluptas deleniti et corrupti dolore nihil aliquid sapiente!
+            </p>
+            <div
+                class="flex space-x-8 opacity-0 group-hover:opacity-100 group-hover:mb-10 lg:group-hover:mb-20  duration-1000">
+                <div class="flex space-x-2 items-center cursor-pointer">
+                    <a href="#" class="text-gega-grey uppercase lg:text-lg hover:text-gega-red duration-500">watch
+                        trailer</a>
+                    <div
+                        class="flex h-8 w-8 text-center items-center justify-center bg-gega-red text-gega-grey rounded-lg">
+                        <i class="fas fa-play"></i>
+                    </div>
+                </div>
+                <div class="flex space-x-2 items-center cursor-pointer">
+                    <a href="#" class="text-gega-grey uppercase lg:text-lg hover:text-gega-red duration-500">Full
+                        Synopsis</a>
+                    <div
+                        class="flex h-8 w-8 text-center items-center justify-center bg-gega-red text-gega-grey rounded-lg">
+                        <i class="fas fa-arrow-right"></i>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="flex space-x-3 absolute bottom-5 left-10 opacity-0 group-hover:opacity-100 duration-500 ">
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-grey"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-red"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-grey"></div>
+        <div class="w-3 h-3 lg:w-4 lg:h-4 rounded-full bg-gega-grey"></div>
+
+    </div>
+
+</section>
+
+
+
+<section class=" py-24 bg-black">
+    <div class="w-full flex flex-col lg:flex-row gap-8 px-4">
+        <!--left-->
+        <div class="basis-2/3">
+            <div class="flex gap-4 space-x-2 divide-x divide-gega-red divide-opacity mb-8">
+                <h2 class="text-gega-red pr-4 pl-10"><a href="#">Latest</a></h2>
+                <h2 class="text-gega-grey pl-2 hover:text-gega-red duration-500 pr-4"><a href="#">Populer</a></h2>
+                <h2 class="text-gega-grey pl-2 hover:text-gega-red duration-500"><a href="#">Best</a></h2>
+            </div>
+            <div class="flex flex-wrap gap-0">
+                @for (item of [1,2,3,4,5,6,7,8]; track $index) {
+                <div class="group relative overflow-hidden basis-1/4 lg:basis-1/3">
+                    <img [src]="`assets/movie${item}.png`" class="group-hover:scale-110 group-hover:opacity-50">
+                    <div class="absolute px-6 bottom-8">
+                        <h3 class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500">
+                            Avatar</h3>
+                        <p
+                            class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gega-grey">
+                            Lorem ipsum dolor sit
+                            amet consectetur
+                            adipisicing elit.
+                            Voluptates, voluptatibus?</p>
+                        <div
+                            class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                            <a href="#" class="hover:text-gega-red"><i class="fa-solid fa-play"></i></a>
+                            <a href="#" class="hover:text-gega-red"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+                }
+                <div class="group relative overflow-hidden basis-1/4 lg:basis-1/3 block md:hidden lg:block">
+                    <img src="assets/movie9.png" class="group-hover:scale-110 group-hover:opacity-50">
+                    <div class="absolute px-6 bottom-8">
+                        <h3 class="text-gega-grey group-hover:text-gega-melon group-hover:mb-2 duration-500">
+                            Avatar</h3>
+                        <p
+                            class="text-xs opacity-0 group-hover:opacity-100 group-hover:mb-10 duration-500 text-gega-grey">
+                            Lorem ipsum dolor sit
+                            amet consectetur
+                            adipisicing elit.
+                            Voluptates, voluptatibus?</p>
+                        <div
+                            class="absolute flex space-x-8 text-gega-grey opacity-0 -bottom-2 group-hover:bottom-2 group-hover:opacity-100 duration-500">
+                            <a href="#" class="hover:text-gega-red"><i class="fa-solid fa-play"></i></a>
+                            <a href="#" class="hover:text-gega-red"><i class="fa-solid fa-arrow-right"></i></a>
+                        </div>
+
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+
+
+        <!--Right-->
+        <div class="basis-1/3">
+            <h2 class="text-gega-grey mb-8">Hot News</h2>
+            <div class="flex flex-col h-full lg:gap-16 ">
+
+                @for (item of [1,2,3,4,5,6,7,8,9]; track $index) {
+                <div class="flex items-center group">
+                    <div class="basis-1/3 h-full">
+                        <!-- <img [src]="'assets/news'+item+'.png'" class="h-full w-full object-cover"> -->
+                        <img [src]="`assets/news${item}.png`" class="h-full w-full object-cover">
+                    </div>
+                    <div
+                        class="basis-2/3 pl-4 text-gega-grey group-hover:text-gega-melon group-hover:cursor-pointer duration-500">
+                        <p class="text-sm">{{item}} - Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minus,
+                            mollitia?
+                        </p>
+                        <h3 class="text-xs mt-2 isilti">ON NOW 0{{item}}.10.2025</h3>
+                    </div>
+                </div>
+                }
+
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="bg-gega-white">
+    <div class="flex flex-col lg:flex-row items-center justify-center relative">
+        <!--left-->
+        <div class="order-2 lg:order-1 basis-1/2 ms-auto">
+            <img src="assets/deneme.png" class="relative lg:absolute h-full lg:h-[120%] bottom-0">
+        </div>
+        <!--right-->
+        <div class="order-1 lg:order-2 basis-1/2">
+            <div class="flex flex-col justify-center py-10 text-center mt-6 lg:mt-0">
+                <h3 class="tracking-wider text-gega-melon ">Action, Drama, Thriller</h3>
+                <h2 class="mb-2">Yüzüklerin Efendisi</h2>
+                <p class="text-sm mb-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde obcaecati
+                    asperiores vero, veniam laudantium voluptatem culpa officia quod aspernatur rerum iste magnam
+                    deserunt voluptatum maxime aliquam delectus omnis. Laborum, ullam!</p>
+                <h3 class="tracking-wider text-gega-red">8 wins 34 nominations</h3>
+            </div>
+        </div>
+        <div class="absolute -top-12 right-auto w-24 h-24 bg-gega-melon rounded-full text-center flex items-center">
+            <p class="font-gemunu uppercase font-bold text-xl text-gega-red -rotate-45">oldie & goldie</p>
+        </div>
+    </div>
+</section>
+
+<section class="py-24 px-8 bg-black text-gega-grey">
+
+    <h2 class="text-gega-red"><a href="#">Populer Posts</a></h2>
+    <div class="grid grid-cols-12 gap-10 mt-5">
+        <div class="col-span-12 md:col-span-6 lg:col-span-6 border border-gega-red">
+            <div class="border-b border-gega-red p-4 flex items-center justify-between">
+                <h3>Accusantium dolorequm laudant</h3>
+                <img src="assets/user1.png" class="rounded-full w-16 h-16 object-cover">
+            </div>
+            <p class="p-4 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod magnam provident
+                consequuntur vero
+                voluptatum nam quos eos, mollitia error! Illum iusto sit illo magni enim, itaque dolore. Molestias,
+                vel excepturi.</p>
+            <div
+                class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+                <p>ON DEC 17, 2022</p>
+                <div class="flex items-center justify-center space-x-1">
+                    <i class="fa-regular fa-comment"></i>
+                    <p>12</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>09</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-span-12 md:col-span-6 lg:col-span-6 border border-gega-red">
+            <div class="border-b border-gega-red p-4 flex items-center justify-between">
+                <h3>Accusantium dolorequm laudant</h3>
+                <img src="assets/user1.png" class="rounded-full w-16 h-16 object-cover">
+            </div>
+            <p class="p-4 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod magnam provident
+                consequuntur vero
+                voluptatum nam quos eos, mollitia error! Illum iusto sit illo magni enim, itaque dolore. Molestias,
+                vel excepturi.</p>
+            <div
+                class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+                <p>ON DEC 17, 2022</p>
+                <div class="flex items-center justify-center space-x-1">
+                    <i class="fa-regular fa-comment"></i>
+                    <p>12</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>09</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grid grid-cols-12 gap-10 mt-5">
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 border border-gega-red">
+            <div class="border-b border-gega-red p-4 flex items-center justify-between">
+                <h3>Accusantium dolorequm laudant</h3>
+                <img src="assets/user1.png" class="rounded-full w-16 h-16 object-cover">
+            </div>
+            <p class="p-4 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod magnam provident
+                consequuntur vero
+                voluptatum nam quos eos, mollitia error! Illum iusto sit illo magni enim, itaque dolore. Molestias,
+                vel excepturi.</p>
+            <div
+                class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+                <p>ON DEC 17, 2022</p>
+                <div class="flex items-center justify-center space-x-1">
+                    <i class="fa-regular fa-comment"></i>
+                    <p>12</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>09</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-span-12 md:col-span-6 lg:col-span-4 border border-gega-red">
+            <div class="border-b border-gega-red p-4 flex items-center justify-between">
+                <h3>Accusantium dolorequm laudant</h3>
+                <img src="assets/user1.png" class="rounded-full w-16 h-16 object-cover">
+            </div>
+            <p class="p-4 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod magnam provident
+                consequuntur vero
+                voluptatum nam quos eos, mollitia error! Illum iusto sit illo magni enim, itaque dolore. Molestias,
+                vel excepturi.</p>
+            <div
+                class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+                <p>ON DEC 17, 2022</p>
+                <div class="flex items-center justify-center space-x-1">
+                    <i class="fa-regular fa-comment"></i>
+                    <p>12</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>09</p>
+                </div>
+            </div>
+        </div>
+        <div class="block md:hidden lg:block col-span-12 lg:col-span-4 border border-gega-red">
+            <div class="border-b border-gega-red p-4 flex items-center justify-between">
+                <h3>Accusantium dolorequm laudant</h3>
+                <img src="assets/user1.png" class="rounded-full w-16 h-16 object-cover">
+            </div>
+            <p class="p-4 text-sm">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quod magnam provident
+                consequuntur vero
+                voluptatum nam quos eos, mollitia error! Illum iusto sit illo magni enim, itaque dolore. Molestias,
+                vel excepturi.</p>
+            <div
+                class="border-t border-gega-red p-4 flex items-center justify-end space-x-4 font-bold font-gemunu text-xs">
+                <p>ON DEC 17, 2022</p>
+                <div class="flex items-center justify-center space-x-1">
+                    <i class="fa-regular fa-comment"></i>
+                    <p>12</p>
+                    <i class="fa-regular fa-heart"></i>
+                    <p>09</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+
+<footer class="bg-black text-gega-grey">
+    <div class="container grid grid-cols-12 px-10 lg:px-0 pb-8">
+        <!--left-->
+        <div class="col-span-12 lg:col-span-4 mt-5">
+            <a href="#"
+                class="text-2 xl lg:text-3xl font-bold font-gemunu text-gega-grey text-transparent bg-gradient-to-r bg-clip-text from-gega-red to-gega-grey ml-5">GEGA</a>
+            <p class="text-sm mt-2">2022 ArinSOFT No &copy; COPYRİGHT</p>
+        </div>
+        <!--middle-->
+        <div class="col-span-12 lg:col-span-4 mt-5">
+            <h2 class="mb-2 text text-gega-red">LINKS</h2>
+            <div class="grid grid-cols-5 gap-2 uppercase">
+                <a class="col-span-2 hover:text-gega-melon duration-500" href="#">movies</a>
+                <a class="col-span-2 hover:text-gega-melon duration-500" href="#">celebrities</a>
+                <a class="col-span-2 hover:text-gega-melon duration-500" href="#">blog</a>
+                <a class="col-span-2 hover:text-gega-melon duration-500" href="#">news</a>
+                <a class="col-span-2 hover:text-gega-melon duration-500" href="#">about</a>
+            </div>
+        </div>
+        <!--right-->
+        <div class="col-span-12 lg:col-span-4 mt-5">
+            <h2 class="mb-2 text-gega-red">FOLLOW US</h2>
+            <form action="" class="flex">
+                <input class="py-1 px-2 bg-transparent border border-gega-red placeholder:xs outline-none" type=" text"
+                    placeholder="TYPE YOUR EMAİL ">
+                <button class="py-1 px-2 border border-gega-red bg-gega-red font-gemunu uppercase">Subscribe</button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</footer>

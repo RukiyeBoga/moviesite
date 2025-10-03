@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+@use "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+@theme {
+  --font-gemunu: "Gemunu Libre", sans-serif;
+  --font-open-sans: "Open Sans", sans-serif;
+  --color-regal-blue: #243c5a; 
+  --color-gega-red: #BC1A45;
+  --color-gega-melon: #FFD369;
+  --color-gega-grey: #DDDDDD;
+  --color-gega-white: #F7F7F7;
+  --spacing-128: 32rem;
+
+}
+
+@layer base {
+  h2, h3, h1 {
+    @apply font-bold text-2xl font-gemunu; /* Tailwind utility classlarını buraya yazabilirsin */
+  }
+}
+
+// #Lorem {
+//     font-family: "Roboto", sans-serif;
+//     background-color: var(--color-regal-blue);
+//     color: var(--color-gega-white);
+// }
+
+// .CWAheader {
+//     font-family: var(--font-gemunu);
+//     @apply flex items-center justify-center space-x-16;
+// }
